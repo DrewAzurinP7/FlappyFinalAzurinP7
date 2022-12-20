@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
+using UnityEditorInternal;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
@@ -8,10 +10,10 @@ public class GameControl : MonoBehaviour
 {
     public static GameControl instance;
     public GameObject gameOverText;
-    public Text scoreText;
+    public TMP_Text scoreText;
     public bool gameOver = false;
     public float ScrollSpeed = -1.5f;
-
+ 
     private int score = 0;
 
     // Start is called before the first frame update
